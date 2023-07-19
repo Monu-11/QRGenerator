@@ -1,9 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from "react
 
 const QRGenerator = () => {
   const [imageSrc, setImageSrc] = useState("");
   const [inputValue, setInputValue] = useState("");
-  const imageRef = useRef(null);
+  // const imageRef = useRef(null);
 
   const api = `https://api.qrserver.com/v1/`;
   const api2 = `create-qr-code/?size=125*125&data=`;
@@ -13,7 +13,7 @@ const QRGenerator = () => {
   };
   return (
     <div className="generator">
-      <img src={imageSrc} alt="QR code" ref={imageRef} />
+      <img src={imageSrc} alt="QR code" />
       <input
         type="text"
         value={inputValue}
